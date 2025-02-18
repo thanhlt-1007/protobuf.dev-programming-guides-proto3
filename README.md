@@ -10,3 +10,9 @@
 gvm install go1.24.0
 gvm use go1.24.0
 ```
+
+## protoc
+
+```sh
+sudo apt install -y protobuf-compiler
+```
