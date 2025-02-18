@@ -21,6 +21,10 @@ const (
 	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)
 )
 
+// You mist give each field in you message definication a number between 1 and 536,870,911 withthe following restrictions:
+// -   The given number must be unique among all fields for that message
+// -   Field numbers 19,000 and 19,999 are reserved for the Protocol Buffers implementation,
+// The protocol buffer compiler will complain if you use one of these reserved field numbers in your message
 type SearchRequest struct {
 	state          protoimpl.MessageState `protogen:"open.v1"`
 	Query          string                 `protobuf:"bytes,1,opt,name=query,proto3" json:"query,omitempty"`
