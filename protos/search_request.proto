@@ -2,6 +2,16 @@ syntax = "proto3";
 
 option go_package = "protos.go";
 
+// Define A Message Type
+/*
+First let's look at a very simple example.
+Let's say you want to define a search request message format,
+where each search request has
+-   a query string
+-   the particular page of results you are interested
+-   and a number of results per page.
+Here's the .proto file you use to define the message type.
+*/
 message SearchRequest {
   string query = 1;
   int32 page_number = 2;
